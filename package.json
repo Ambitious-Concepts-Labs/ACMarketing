@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently -k 'cd client && npm start --perfix client' 'cd server && npm start --perfix server'"
+    "start": "concurrently -k 'cd client && npm start --perfix client' 'cd server && npm start --perfix server'",
+    "build": "concurrently -k 'cd client && npm run build --perfix client'"
   },
   "repository": {
     "type": "git",
