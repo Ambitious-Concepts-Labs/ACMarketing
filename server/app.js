@@ -16,7 +16,7 @@ const app = express();
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "http://localhost:3000",
+		origin: process.env.CORS,
 		credentials: true,
 		exposedHeaders: ["Set-Cookie", "Date", "ETag"],
 	})

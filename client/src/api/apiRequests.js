@@ -1,5 +1,6 @@
 import axios from "axios";
-const mainUrl = "http://localhost:4000/api/v1";
+// const mainUrl = "http://localhost:4000/api/v1";
+const mainUrl = process.env.REACT_APP_BE_URL || "http://localhost:4000/api/v1";
 const config = {
 	headers: { "Content-Type": "application/json" },
 	withCredentials: true,
